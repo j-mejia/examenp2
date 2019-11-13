@@ -55,6 +55,28 @@ function initMangaApi(db)
     });// saveNewProduct
  }); // post /new
 
+
+ router.put('/update/:conid',
+ function(req, res)
+ {
+   var conIdToModify = req.params.conid;
+   var nombreAct= req.body.nombre;
+   var autorAct = req.body.autor;
+   mangaModel.updateManga(
+     {nombre:nombreAct, autor:autorAct}, conIdToModify,
+     (err, rsult)=>{
+       if(err){
+         res.status(500).json(err);
+       }else{
+         res.status(200).json(rsult);
+       }
+     }
+     ); //updateProduct
+ }
+);// put :prdsku
+
+
+
     return router;
 }
 
