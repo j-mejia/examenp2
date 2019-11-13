@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "f3dd9f0e-a868-47df-bf88-314f41cfef58",
+		"name": "manga",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/exa/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"exa",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "codigo",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "naruto",
+							"type": "text"
+						},
+						{
+							"key": "autor",
+							"value": "chin",
+							"type": "text"
+						},
+						{
+							"key": "PaisOrigen",
+							"value": "Japon",
+							"type": "text"
+						},
+						{
+							"key": "Estado",
+							"value": "completed",
+							"type": "text"
+						},
+						{
+							"key": "KeyWords",
+							"value": "dd",
+							"type": "text"
+						},
+						{
+							"key": "Categorias",
+							"value": "dd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/exa/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"exa",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/exa/update/5dcb60a635972924e8ab9cc8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"exa",
+						"update",
+						"5dcb60a635972924e8ab9cc8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/exa/delete/5dcb60a635972924e8ab9cc8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"exa",
+						"delete",
+						"5dcb60a635972924e8ab9cc8"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
